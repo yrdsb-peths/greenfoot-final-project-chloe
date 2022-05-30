@@ -11,7 +11,6 @@ public class Score extends Actor
     {
         GreenfootImage newImage = new GreenfootImage(100,50);
         setImage(newImage);
-        setLocation(200,500);
     }
     
     public void setScore(int score)

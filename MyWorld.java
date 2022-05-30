@@ -41,7 +41,7 @@ public class MyWorld extends World
         scoreObj.setScore(0);
 
         // Add it to our world
-        addObject(scoreObj, 100,100);
+        addObject(scoreObj, 40, 386);
     }
     
     public void act()
@@ -78,6 +78,5 @@ public class MyWorld extends World
         
         addObject(botPipe, getWidth(), getHeight()/2 + image.getHeight() - Greenfoot.getRandomNumber(150));
         addObject(topPipe, getWidth(), botPipe.getY() - image.getHeight() - PIPE_SPACING);
-        
     }
 }
