@@ -39,7 +39,7 @@ public class TitleScreen extends World
      */
     private void prepare()
     {
-        FlappyBird flappyBird = new FlappyBird();
-        addObject(flappyBird,getWidth()/2, getHeight()/2);
+        TitleFlappy titleFlappy = new TitleFlappy();
+        addObject(titleFlappy,getWidth()/2, getHeight()/2);
     }
 }

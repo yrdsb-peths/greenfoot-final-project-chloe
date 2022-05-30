@@ -21,7 +21,7 @@ public class Score extends Actor
         Font f = new Font("Comic Sans MS", 30);
         newImage.setFont(f);
         
-        Color c = new Color(127,127,127,1);        
+        Color c = new Color(127,127,127,5);        
         newImage.setColor(c);
         newImage.fill();
         Color b = new Color(0,0,0,255);

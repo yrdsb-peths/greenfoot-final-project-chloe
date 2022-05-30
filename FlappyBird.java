@@ -9,8 +9,44 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class FlappyBird extends Actor
 {
     double dy = 0;
-    double g = 2.5;
-    double BOOST_SPEED = -10;
+    double g = 0.5;
+    double BOOST_SPEED = -6;
+    
+    GreenfootImage[] idle = new GreenfootImage[5];
+    String facing = "right";
+    SimpleTimer animationTimer = new SimpleTimer();
+    
+    public FlappyBird()
+    {
+        for(int i = 0; i < idle.length; i++)
+        {
+            idle[i] = new GreenfootImage("images/bird_sprites/idle" + i + ".png");
+            idle[i].scale(50,40);
+        }
+        
+        animationTimer.mark();
+        
+        setImage(idle[0]);
+    }
+    
+    /**
+     * Animate the dolphin
+     */
+    int imageIndex = 0;
+    public void animateFlappy()
+    {
+        if(animationTimer.millisElapsed() < 150)
+        {
+            return;
+        }
+        animationTimer.mark();
+        
+        if(facing.equals("right"))
+        {
+           setImage(idle[imageIndex]);
+           imageIndex = (imageIndex + 1) % idle.length; 
+        }
+    }
     
     public void act()
     {
@@ -36,6 +72,8 @@ public class FlappyBird extends Actor
         }
         
         dy = dy + g;
+        
+        animateFlappy();
     }
     
     private void displayGameOver()

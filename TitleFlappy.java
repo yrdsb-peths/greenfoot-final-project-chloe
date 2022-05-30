@@ -1,21 +1,19 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class pipe here.
+ * Write a description of class TitleFlappy here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Pipe extends Actor
+public class TitleFlappy extends FlappyBird
 {
-    int PIPE_SPEED = -4;
-    
     /**
-     * Act - do whatever the Pipe wants to do. This method is called whenever
+     * Act - do whatever the TitleFlappy wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act()
-    {   
-        setLocation(getX() + PIPE_SPEED, getY());
+    {
+        // Add your action code here.
     }
 }

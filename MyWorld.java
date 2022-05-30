@@ -25,7 +25,7 @@ public class MyWorld extends World
         super(600, 400, 1, false);
 
         // Set paint order
-        setPaintOrder(Pipe.class, FlappyBird.class, Score.class, GameOver.class);
+        setPaintOrder(Score.class, GameOver.class, Pipe.class, FlappyBird.class);
 
         Ground ground = new Ground();
         addObject(ground, 300, 375);
@@ -73,8 +73,6 @@ public class MyWorld extends World
         Pipe botPipe = new Pipe();
         
         GreenfootImage image = botPipe.getImage();
-        int percent = 150; // for 50% larger image
-        image.scale(image.getWidth()*percent/100, image.getHeight()*percent/100);
         
         addObject(botPipe, getWidth(), getHeight()/2 + image.getHeight() - Greenfoot.getRandomNumber(150));
         addObject(topPipe, getWidth(), botPipe.getY() - image.getHeight() - PIPE_SPACING);
