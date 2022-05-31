@@ -22,7 +22,7 @@ public class TitleScreen extends World
         addObject(ground, 300, 375);
 
         TitleLabel titleLabel = new TitleLabel();
-        addObject(titleLabel, 300, 100);
+        addObject(titleLabel, getWidth()/2, getHeight()/2 -50);
         prepare();
     }
     
@@ -40,6 +40,6 @@ public class TitleScreen extends World
     private void prepare()
     {
         TitleFlappy titleFlappy = new TitleFlappy();
-        addObject(titleFlappy,getWidth()/2, getHeight()/2);
+        addObject(titleFlappy,getWidth()/2, getHeight()/2 + 50);
     }
 }
