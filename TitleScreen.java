@@ -27,14 +27,7 @@ public class TitleScreen extends World
         TitleFlappy titleFlappy = new TitleFlappy();
         addObject(titleFlappy,getWidth()/2, getHeight()/2 + 10 );
         
-        Button button = new Button("");
+        Button button = new Button("play.png", new MyWorld());
         addObject(button, getWidth()/2, getHeight()/2 + 100);
-    }
-    
-    public void act(){
-        if(Greenfoot.isKeyDown("space")){
-            MyWorld world = new MyWorld();
-            Greenfoot.setWorld(world);
-        }
     }
 }
