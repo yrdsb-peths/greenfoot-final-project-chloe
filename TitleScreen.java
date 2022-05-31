@@ -22,8 +22,13 @@ public class TitleScreen extends World
         addObject(ground, 300, 375);
 
         TitleLabel titleLabel = new TitleLabel();
-        addObject(titleLabel, getWidth()/2, getHeight()/2 -50);
-        prepare();
+        addObject(titleLabel, getWidth()/2, getHeight()/2 -100);
+        
+        TitleFlappy titleFlappy = new TitleFlappy();
+        addObject(titleFlappy,getWidth()/2, getHeight()/2 + 10 );
+        
+        Button button = new Button("");
+        addObject(button, getWidth()/2, getHeight()/2 + 100);
     }
     
     public void act(){
@@ -31,15 +36,5 @@ public class TitleScreen extends World
             MyWorld world = new MyWorld();
             Greenfoot.setWorld(world);
         }
-    }
-    
-    /**
-     * Prepare the world for the start of the program.
-     * That is: create the initial objects and add them to the world.
-     */
-    private void prepare()
-    {
-        TitleFlappy titleFlappy = new TitleFlappy();
-        addObject(titleFlappy,getWidth()/2, getHeight()/2 + 50);
     }
 }

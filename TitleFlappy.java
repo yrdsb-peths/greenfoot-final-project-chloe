@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class TitleFlappy extends FlappyBird
+public class TitleFlappy extends Title
 {
     /**
      * Act - do whatever the TitleFlappy wants to do. This method is called whenever

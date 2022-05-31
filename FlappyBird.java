@@ -71,6 +71,12 @@ public class FlappyBird extends Actor
             displayGameOver();
         }
         
+        // If FlappyBird touches the top of the world, Game Over!
+        if(getY() < 0)
+        {
+            displayGameOver();
+        }
+        
         dy = dy + g;
         
         animateFlappy();
