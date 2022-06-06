@@ -16,6 +16,8 @@ public class FlappyBird extends Actor
     String facing = "right";
     SimpleTimer animationTimer = new SimpleTimer();
     
+    GreenfootSound die = new GreenfootSound("die.mp3");
+    
     public FlappyBird()
     {
         for(int i = 0; i < idle.length; i++)
@@ -54,6 +56,7 @@ public class FlappyBird extends Actor
         if(getOneIntersectingObject(Pipe.class) != null)
         {
             displayGameOver();
+            die.play();
         }
         
         rotateFlappyBird();
@@ -69,12 +72,14 @@ public class FlappyBird extends Actor
         if(getY() > getWorld().getHeight())
         {
             displayGameOver();
+            die.play();
         }
         
         // If FlappyBird touches the top of the world, Game Over!
         if(getY() < 0)
         {
             displayGameOver();
+            die.play();
         }
         
         dy = dy + g;

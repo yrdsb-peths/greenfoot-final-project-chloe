@@ -15,6 +15,8 @@ public class MyWorld extends World
     int FIRST_PIPE = 240;
     Score scoreObj = null;
     
+    GreenfootSound point = new GreenfootSound("point.mp3");
+    
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -60,6 +62,7 @@ public class MyWorld extends World
             {
                 score++;
                 scoreObj.setScore(score);
+                point.play();
             }
             flappyCounter++;
         }
