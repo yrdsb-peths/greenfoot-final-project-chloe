@@ -3,8 +3,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Write a description of class Ground here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Chloe Hoang 
+ * @version June 15, 2022
  */
 public class Ground extends Actor
 {
