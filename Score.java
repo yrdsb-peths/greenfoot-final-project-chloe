@@ -29,4 +29,5 @@ public class Score extends Actor
         newImage.drawString("" + score,30,30);
         setImage(newImage);
     }
+    
 }

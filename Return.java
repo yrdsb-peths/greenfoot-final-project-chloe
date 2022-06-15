@@ -1,17 +1,17 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * This is the button that appears on the title screen. If it is pressed,
- * the screen will change to the instructions screen.
+ * This is the button that appears on the instructions screen. If it is
+ * pressed, the screen will change to the title screen.
  * 
  * @author Chloe Hoang
  * @version June 15, 2022
  */
-public class Settings extends Title
+public class Return extends Title
 {
     private World link;
     
-    public Settings(String image, World link){
+    public Return(String image, World link){
         setImage(new GreenfootImage(image));
         getImage().scale(40,40);
         this.link = link;
@@ -25,4 +25,3 @@ public class Settings extends Title
         }
     }
 }
-

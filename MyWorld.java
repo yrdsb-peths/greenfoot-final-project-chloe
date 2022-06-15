@@ -30,9 +30,6 @@ public class MyWorld extends World
         // Set paint order
         setPaintOrder(Score.class, GameOver.class, Pipe.class, FlappyBird.class);
 
-        Ground ground = new Ground();
-        addObject(ground, 300, 375);
-
         // Create a Flappy Bird Object
         FlappyBird flappy = new FlappyBird();
 

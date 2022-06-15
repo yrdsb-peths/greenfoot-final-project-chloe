@@ -14,6 +14,6 @@ public class Play extends Title
      */
     public void act()
     {
-        // Add your action code here.
+        getImage().scale(325,200);
     }
 }

@@ -18,10 +18,13 @@ public class Instructions extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
         
-        Ground ground = new Ground();
-        addObject(ground, 300, 375);
-        
         Play play = new Play();
-        addObject(play, getWidth()/2, getHeight()/2);
+        addObject(play, getWidth()/2, getHeight()/2 - 25);
+        
+        Return back = new Return("back.png", new TitleScreen());
+        addObject(back, 25, 25); 
+        
+        Label steps = new Label("Play by using <space> or \u2191", 40);
+        addObject(steps,getWidth()/2, 324);
     }
 }
