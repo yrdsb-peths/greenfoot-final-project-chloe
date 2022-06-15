@@ -1,18 +1,18 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * This is the button that appears on the title screen. If it is pressed,
- * the screen will change to the main game screen
+ * Write a description of class Settings here.
  * 
- * @author Chloe Hoang 
- * @version June 15, 2022
+ * @author (your name) 
+ * @version (a version number or a date)
  */
-public class Button extends Title
+public class Settings extends Title
 {
     private World link;
     
-    public Button(String image, World link){
+    public Settings(String image, World link){
         setImage(new GreenfootImage(image));
+        getImage().scale(40,40);
         this.link = link;
     }
     
@@ -24,3 +24,4 @@ public class Button extends Title
         }
     }
 }
+

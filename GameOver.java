@@ -1,7 +1,8 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class GameOver here.
+ * When you hit the top or the bottom of the world, or the pipe, this label
+ * will print on the screen
  * 
  * @author Chloe Hoang 
  * @version June 15, 2022

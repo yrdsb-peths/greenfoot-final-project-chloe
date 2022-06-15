@@ -1,10 +1,11 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class FlappyBird here.
+ * This code controls what the flappy bird actor does, like how it jumps,
+ * the animations, and when it dies.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Chloe Hoang 
+ * @version June 15, 2022
  */
 public class FlappyBird extends Actor
 {
@@ -63,7 +64,7 @@ public class FlappyBird extends Actor
         setLocation(getX(), (int) (getY() + dy));
         
         // If user pressed UP arrow, launch Flappy Bird upward
-        if(Greenfoot.isKeyDown("space") == true)
+        if(Greenfoot.isKeyDown("space") == true || Greenfoot.isKeyDown("up") == true)
         {
             dy = BOOST_SPEED;
         }

@@ -1,9 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Ground here.
- * 
- * @author Chloe Hoang 
+ * @author Chloe Hoang
  * @version June 15, 2022
  */
 public class Ground extends Actor

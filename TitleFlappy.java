@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class TitleFlappy here.
+ * This is the flappy bird that appears on the title screen
  * 
- * @author Chloe Hoang 
- * @version June 15, 2022
+ * @author (your name) 
+ * @version (a version number or a date)
  */
 public class TitleFlappy extends Title
 {

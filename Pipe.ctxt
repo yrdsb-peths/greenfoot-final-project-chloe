@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Pipe
-comment0.text=\n\ Write\ a\ description\ of\ class\ pipe\ here.\n\ \n\ @author\ Chloe\ Hoang\ \n\ @version\ June\ 15,\ 2022\n
+comment0.text=\n\ This\ code\ controls\ how\ fast\ the\ pipe\ will\ move,\ and\ the\ location\n\ \n\ @author\ Chloe\ Hoang\ \n\ @version\ June\ 15,\ 2022\n
 comment1.params=
 comment1.target=void\ act()
 comment1.text=\n\ Act\ -\ do\ whatever\ the\ Pipe\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n

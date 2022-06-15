@@ -1,6 +1,6 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
- * Write a description of class Score here.
+ * This code is the colour and the font of the score
  * 
  * @author Chloe Hoang 
  * @version June 15, 2022

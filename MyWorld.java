@@ -1,7 +1,8 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class MyWorld here.
+ * This code is the world class, which is the main class. It is the basis of 
+ * what the game looks like.
  * 
  * @author Chloe Hoang 
  * @version June 15, 2022
@@ -14,9 +15,9 @@ public class MyWorld extends World
     int score = 0;
     int FIRST_PIPE = 240;
     Score scoreObj = null;
-    
+
     GreenfootSound point = new GreenfootSound("point.mp3");
-    
+
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -45,17 +46,17 @@ public class MyWorld extends World
         // Add it to our world
         addObject(scoreObj, 40, 386);
     }
-    
+
     public void act()
     {
         pipeCounter++;
-        
+
         if(pipeCounter % 100 == 0)
         {
             // Create a pipe object
             createPipes();
         }
-        
+
         if(pipeCounter >= FIRST_PIPE)
         {
             if(flappyCounter % 100 == 0)
@@ -68,15 +69,15 @@ public class MyWorld extends World
         }
 
     }
-    
+
     private void createPipes()
     {
         // Create a pipe object
         Pipe topPipe = new Pipe();
         Pipe botPipe = new Pipe();
-        
+
         GreenfootImage image = botPipe.getImage();
-        
+
         addObject(botPipe, getWidth(), getHeight()/2 + image.getHeight() - Greenfoot.getRandomNumber(150));
         addObject(topPipe, getWidth(), botPipe.getY() - image.getHeight() - PIPE_SPACING);
     }

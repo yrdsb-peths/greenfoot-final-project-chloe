@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class pipe here.
+ * This code controls how fast the pipe will move, and the location
  * 
  * @author Chloe Hoang 
  * @version June 15, 2022
