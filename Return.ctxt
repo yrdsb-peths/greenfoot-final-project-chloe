@@ -1,8 +1,0 @@
-#BlueJ class context
-comment0.target=Return
-comment0.text=\n\ This\ is\ the\ button\ that\ appears\ on\ the\ instructions\ screen.\ If\ it\ is\n\ pressed,\ the\ screen\ will\ change\ to\ the\ title\ screen.\n\ \n\ @author\ Chloe\ Hoang\n\ @version\ June\ 15,\ 2022\n
-comment1.params=image\ link
-comment1.target=Return(java.lang.String,\ greenfoot.World)
-comment2.params=
-comment2.target=void\ act()
-numComments=3

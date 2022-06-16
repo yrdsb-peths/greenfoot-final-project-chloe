@@ -86,6 +86,7 @@ public class FlappyBird extends Actor
         dy = dy + g;
         
         animateFlappy();
+        
     }
     
     private void displayGameOver()

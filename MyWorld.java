@@ -17,6 +17,7 @@ public class MyWorld extends World
     Score scoreObj = null;
 
     GreenfootSound point = new GreenfootSound("point.mp3");
+    Label label;
 
     /**
      * Constructor for objects of class MyWorld.
@@ -36,6 +37,15 @@ public class MyWorld extends World
         // Add flappy to our world
         addObject(flappy, 100, getHeight()/2);
 
+        //Instructions
+        label = new Label("Use <space> or \u2191 to jump", 40);
+        addObject(label,getWidth()/2, 50);
+
+        if(Greenfoot.isKeyDown("space") || Greenfoot.isKeyDown("up"))
+        {
+            removeObject(label);
+        }
+
         // Create a Score object
         scoreObj = new Score();
         scoreObj.setScore(0);
@@ -46,8 +56,12 @@ public class MyWorld extends World
 
     public void act()
     {
+        if(Greenfoot.isKeyDown("space") || Greenfoot.isKeyDown("up"))
+        {
+            removeObject(label);
+        }
+        
         pipeCounter++;
-
         if(pipeCounter % 100 == 0)
         {
             // Create a pipe object
@@ -58,6 +72,7 @@ public class MyWorld extends World
         {
             if(flappyCounter % 100 == 0)
             {
+                //Increase the score
                 score++;
                 scoreObj.setScore(score);
                 point.play();

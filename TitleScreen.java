@@ -28,7 +28,5 @@ public class TitleScreen extends World
         Button button = new Button("play.png", new MyWorld());
         addObject(button, getWidth()/2, getHeight()/2 + 100);
         
-        Settings instructions = new Settings("instructions.png", new Instructions());
-        addObject(instructions, 30, 30); 
     }
 }
